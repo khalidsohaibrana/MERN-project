@@ -13,7 +13,8 @@ function Navbar1() {
     <Navbar className='navbar p-2 navbar-default py-2 navbar navbar-expand-lg navbar-light' bg="light" expand="lg">
       <div className="px-0 ps-2  container-fluid ">
         <NavbarBrand className='navbar-brand'>
-            <Image src='https://geeks-nextjs.vercel.app/images/brand/logo/logo.svg'></Image>
+            {/* <Image src='https://geeks-nextjs.vercel.app/images/brand/logo/logo.svg'></Image> */}
+            <img src='https://opensea.io/static/images/logos/opensea-logo.svg' style={{width:'40px',height:"40px"}} />
         </NavbarBrand>
         {/* <Navbar.Brand href="">
             
