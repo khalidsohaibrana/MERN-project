@@ -91,7 +91,7 @@ function Navbar1() {
         </Nav>
         <Nav className='ms-auto d-flex align-items-center'>
           <NavbarCollapse className='navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap navbar-nav'>
-              
+              <Button onClick={()=>{alert("ADD Nft form")}} >Create NFT</Button>
               <span className='d-flex' style={{}}>
               <ul class="navbar-right-wrap ms-2 d-flex nav-top-wrap navbar-nav"  >
                   <a style={{backgroundColor:'lightgray'}} className='text-dark icon-notifications me-lg-1 btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted  '>
