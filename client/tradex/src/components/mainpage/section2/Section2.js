@@ -54,7 +54,7 @@ function Section2(props) {
                             <div className='col-sm-6'>
                                 
                                     
-                            <CardList data={slicedDataTrend                                                                                     }/>
+                            <CardList data={slicedDataTrend}/>
                                 
                                 
                             </div>

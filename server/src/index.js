@@ -38,36 +38,37 @@ app.get('/data', (req, res) => {
 
 
 
-// app.post('/data',(req,res)=>{
 
-//   fs.readFile(filePath, (err,data)=>{
+app.post('/data',(req,res)=>{
 
-//     if(err){
-//       console.error(err)
-//       res.status(500).json({error:'Faild to read Json file.'});
-//     }
+  fs.readFile(filePath, (err,data)=>{
 
-//     try {
-//       const JsonData= JSON.parse(data);
-//       const newData= req.body;
+    if(err){
+      console.error(err)
+      res.status(500).json({error:'Faild to read Json file.'});
+    }
 
-//       // Add the new data to the jsonData object
-//       JsonData.push(newData);
+    try {
+      const JsonData= JSON.parse(data);
+      const newData= req.body;
 
-//       // Write the updated jsonData back to the file
-//       fs.writeFile('/Users/khalidsohaib/Documents/bootcampt/node-projects/assignment-one/src/data.txt', JSON.stringify(JsonData),'utf8', (err)=>{
-//         if(err)
-//         console.error(err)
-//         res.status(500).json({error:'Faild to write Json file'})
-//       })
-//       return res.json({message:"data added successfully"})
+      // Add the new data to the jsonData object
+      JsonData.push(newData);
 
-//     } catch (error) {
+      // Write the updated jsonData back to the file
+      fs.writeFile('/Users/khalidsohaib/Projects/MERN-project/server/src/NFTs.json', JSON.stringify(JsonData),'utf8', (err)=>{
+        if(err)
+        console.error(err)
+        res.status(500).json({error:'Faild to write Json file'})
+      })
+      return res.json({message:"data added successfully"})
+
+    } catch (error) {
       
-//     }
-//   })
+    }
+  })
 
-// })
+})
 
 
 
