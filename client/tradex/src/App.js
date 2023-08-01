@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginForm from './components/login-signup/loginform';
-import Signup from './components/login-signup/signup';
-import Home from './components/Home';
 
+import Home from './components/mainpage/Home'
+import Navbar1 from './components/Navbar1'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+import AddListingForm from './components/createNFT/AddListingForm';
 function App() {
   return (
-    <div className="App">
-      <LoginForm/>
-      <Signup/>
+    <div className="App container align-items-center">
+      <Navbar1/>
       <Home/>
     </div>
   );
